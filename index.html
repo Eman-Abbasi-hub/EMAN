@@ -1,14 +1,80 @@
-/* Style inputs EXCEPT tel and select */
-input:not([type="tel"]):not([type="submit"]),
-textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 12px 16px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  background-color: #FFF0F5;
-  border: 2px solid #FFB6C1;
-  border-radius: 8px;
-  color: #4A4A4A;
-  box-sizing: border-box;
-}
+<!doctype html>
+<html>
+  <head>
+    <h1>EMAN PROFILE</h1>
+    <title>Emans Profile Info</title>
+  </head>
+  <body>
+    <p>WELCOME TO MY PROFILE INFORMATION</p>
+
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to the Home Page of EMAN PROFILE</p>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>
+        HI.am Eman,this is my personal profile information page.It contains some
+        information about my studies and skills as of now.so reading this would
+        give you a thorough information of my current studies level. This is an
+        assignment for Website development course in which i am currently
+        enrolled in
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ol>
+        <li>Web Browsing</li>
+        <li>Canva Designs</li>
+        <li>Book Reading</li>
+        <li>Coding</li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="fullname"> Full Name:</label>
+        <input type="text" id="fullname" name="fullname"required >
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br />
+
+        <label for="subject"> Subject </label>
+        <select id="subject" name="subject"required>
+          <option value="">Select Subject</option>
+          <option value="web">General</option>
+          <option value="web">Professional</option>
+          <option value="web">Others</option>
+        </select>
+        <br /><br />
+     
+         <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message"
+                          rows="4" cols="30"required></textarea>
+                <br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; 2026 EMAN PROFILE. All Rights Reserved.</p>
+   
+  </footer>
+  </body>
+</html>
